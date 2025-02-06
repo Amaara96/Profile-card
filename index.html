@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="card" data-state="#about">
+       <div class="card-header">
+           <div class="card-cover" style="background-image: url(img/pexels-iriser-673857.jpg);"></div>
+           <img src="img/amarachi.jfif" alt="Avatar" class="card-avatar">
+           <h1 class="card-fullname">Okei Amarachi </h1>
+           <h2 class="card-jobtitle">Front-end Web Developer</h2>
+       </div>
+       <div class="card-main">
+           <div class="card-section is-active" id="about">
+               <div class="card-content">
+                   <div class="card-subtitle">ABOUT</div>
+                   <p class="card-desc">Amarachi Okei is a passionate front - end web developer with basic insights on tools like HTML5, CSS3 and JavaScript.</p>
+               </div>
+               <div class="card-social">
+                   <a href="#"><img src="img/fb.png" alt="Facebook"></a>
+                   <a href="#"><img src="img/twitter.png" alt="Twitter"></a>
+                   <a href="#"><img src="img/insta.png" alt="Insta"></a>
+                   <a href="#"><img src="img/linkedin.png" alt="Linkedin"></a>
+               </div>
+           </div>
+           <div class="card-section" id="experience">
+               <div class="card-content">
+                   <div class="card-subtitle">WORK EXPERIENCE</div>
+                   <div class="card-timeline">
+                       <div class="card-item" data-year="2024">
+                           <div class="card-item-title">Front-end Developer Intern <span>Deebug Institute</span></div>
+                           <div class="card-item-desc">Worked with Front-end technologies like HTML, CSS, JavaScript and React.js</div>
+                       </div>
+                    <div class="card-item" data-year="2023">
+                        <div class="card-item-title"> Social media Manager <span>Coldigify</span></div>
+                        <div class="card-item-desc">Managed social media platforms Tiktok, Created relatable contents for the company</div>
+                    </div>
+                                      
+                   </div>
+               </div>
+           </div>
+           <div class="card-section" id="contact">
+               <div class="card-content">
+                   <div class="card-subtitle">Contact</div>
+                   <div class="card-contact-wrapper">
+                       <div class="card-contact">
+                           <img src="img/location.png" alt="Location">
+                           No. 9 Arougba, Airport Road Benin City
+                       </div>
+                    <div class="card-contact">
+                        <img src="img/phone.png" alt="Phone">
+                        +2349056634409
+                    </div>
+                    <div class="card-contact">
+                        <img src="img/mail.png" alt="Email">
+                        alexandraokei20
+                    </div> 
+                    <button class="contact-me">WORK TOGETHER</button>
+                   </div>
+               </div>
+           </div>
+           <div class="card-buttons">
+               <button class="is-active" data-section="#about">ABOUT</button>
+               <button  data-section="#experience">EXPERIENCE</button>
+               <button  data-section="#contact">CONTACT</button>
+           </div>
+       </div>
+    </div>
+<script src="/script.js"></script>    
+</body>
+</html>
